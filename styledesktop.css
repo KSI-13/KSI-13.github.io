@@ -1,0 +1,124 @@
+    html {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        font-family: sans-serif;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    .container-navbar {
+        display: flex;
+        flex-direction: row;
+        background-color: #276561;
+        color: white;
+        margin: 0px;
+    }
+
+    .container-navbar h4 {
+        width: 400px;
+        padding-left: 100px;
+        margin: 20px;
+    }
+
+    .container-bt-navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .dropdown {
+        display: flex;
+    }
+
+    .container-bt-navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .container-bt-navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .container-bt-navbar ul li {
+        display: inline-block;
+        margin: 0 30px;
+    }
+
+    .container-bt-navbar ul li a {
+        display: block;
+    }
+
+    .container-bt-navbar ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 40%;
+        transform: translateX(-50%);
+
+        background-color: #555;
+        padding: 10px;
+    }
+
+    .container-bt-navbar ul ul li {
+        display: block;
+        margin: 0;
+    }
+    .container-bt-navbar ul ul li a {
+        margin: 0;
+        color: #276561;
+    }
+
+    .container-bt-navbar ul li:hover > ul {
+        display: block;
+        background-color: white;
+        border: 1px solid #276561;
+        color: #276561;
+        z-index: 3;
+    }
+
+
+    .stylefooter {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        background-color: #193230;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    .stylefooter h3 {
+        color: white;
+    }
+
+    .stylefooter p {
+        text-align: center;
+    }
+
+    .stylefooter a {
+        text-decoration: none;
+        width: 80%;
+        text-align: center;
+        color: white;
+    }
+
+    .stylefooter a::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    
