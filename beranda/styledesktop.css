@@ -13,7 +13,7 @@
 .container-carousel {
     margin-top: 60px;
     margin-bottom: 100px;
-    width: 100vw;
+    width: 98vw;
     height: 55.3vh;
     position: relative;
 
@@ -118,4 +118,55 @@
     color: #757575;
     text-decoration: none;
     font-size: 23px;
+}
+
+@media screen and (max-width: 767px) {
+    .container-carousel {
+        width: 100vw;
+        height: 13vh;
+    }
+
+    .container-carousel .iframe-container iframe {
+        width: 267px;
+        height: 150px;
+
+    }
+    
+    .container-info {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .container-content h2 {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .container-info-item {
+        width: 100%;
+        border-bottom: 1px solid #276561 ;
+    }
+
+    .container-info-item p {
+        font-size: 15px;
+    }
+    .carousel-button i {
+        font-size: 60px;
+        color: #276561;
+    }
+
+    .carousel-button.prev {
+        left: 3%;
+    }
+    .carousel-button.next {
+        right: 3%;
+    }
+
+    .carousel-button {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    
 }

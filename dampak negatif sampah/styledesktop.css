@@ -31,3 +31,39 @@
 .container-info-item p {
     font-size: x-large;
 }
+
+@media screen and (max-width: 767px) {
+    .container-content img {
+        transform: scale(0.9);
+    }
+
+    .container-content h1 {
+        font-size: medium;
+    }
+
+    .container-info {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .container-info-item {
+        flex-direction: column;
+    }
+
+    .container-info-item.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .container-info-item img {
+        width: 80%;
+    }
+
+    .container-info-item h2 {
+        font-size: small;
+    }
+
+    .container-info-item p {
+        font-size: 15px;
+        text-align: center;
+    }
+}

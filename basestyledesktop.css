@@ -18,6 +18,11 @@
         margin: 0px;
     }
 
+
+    .container-navbar input, label {
+        display: none;
+    }
+
     .container-navbar h4 {
         width: 400px;
         padding-left: 100px;
@@ -140,4 +145,94 @@
         margin-top: 30px;
         margin-bottom: 10px;
     }
+
+    @media screen and (max-width: 767px) {
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100%;
+        }
+        .container-navbar {
+            width: 100%;
+            flex-direction: column;    
+            justify-content: center;
+        }
+        .container-navbar h4 {
+            width: 90%;
+            text-align: start;
+            padding-left: 0px;
+        }
+        .container-navbar label {
+            display: block;
+            position: absolute;
+            right: 5%;
+            top: 3%;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: none;
+        }
+        .container-navbar label i {
+            color: #276561;
+            margin: 3px;
+        }
+        .container-bt-navbar {
+            display: none;
+            width: 100%;
+            transition: 300ms ease-in-out;
+        }
+
+        .container-navbar input:checked + .container-bt-navbar, .dropdown {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: start;
+            justify-content: start;
+            transition: 300ms ease-in-out;
+        }
+
+        .container-bt-navbar .dropdown li {
+            width: 100%;
+            margin: 0;
+            border-bottom: 1px solid rgb(255, 250, 250);
+        }
+
+        .container-bt-navbar .dropdown li a {
+            margin-left: 10px;
+        }
+
+        .container-navbar input:checked + .container-bt-navbar .dropdown {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .container-bt-navbar a:checked + .container-bt-navbar .dropdown ul {
+            display: block;
+        }
+
+        .container-bt-navbar ul li ul {
+            display: none;
+        }
+
+        .container-bt-navbar ul li:checked + ul {
+            display: none;
+        }
     
+
+        .container-navbar input[type="checkbox"] {
+            display: none;
+        }
+        
+        .stylefooter {
+            font-size: 13px;
+        }
+
+
+
+
+
+        
+    }

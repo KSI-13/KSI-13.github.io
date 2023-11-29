@@ -6,7 +6,7 @@
 }
 
 .container-navbar {
-    position: relative;
+    display: flex;
     background-color: rgb(0, 0, 0, 0.5);
 }
 
@@ -96,4 +96,33 @@
     color: #757575;
     text-decoration: none;
     font-size: 23px;
+}
+
+@media screen and (max-width: 767px) {
+    .container-navbar-custom {
+        height: 195px;
+    }
+    .container-navbar-custom img {
+        height: 195px;
+    }
+
+    .container-navbar-custom img {
+        width: 100%;
+    }
+
+    .container-info {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-info-item {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container-info-item p {
+        font-size: 15px;
+        width: fit-content;
+        padding: 20px;
+    }
 }
