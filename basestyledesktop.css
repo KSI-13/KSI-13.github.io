@@ -220,6 +220,12 @@
         .container-bt-navbar ul li:checked + ul {
             display: none;
         }
+
+        .container-bt-navbar ul.dropdown li ul {
+            position: absolute;
+            left: 23%;
+            top : 65%;
+        }
     
 
         .container-navbar input[type="checkbox"] {
