@@ -55,7 +55,12 @@
     }
 
     .container-bt-navbar ul li a {
+        color: white;
         display: block;
+    }
+
+    .container-bt-navbar ul li a:hover {
+        color: #4dcfc4;
     }
 
     .container-bt-navbar ul ul {
@@ -76,6 +81,20 @@
     .container-bt-navbar ul ul li a {
         margin: 0;
         color: #276561;
+    }
+
+    .container-bt-navbar li a:hover {
+        color: #193230;
+        transition: 300ms ease-in-out;
+    }
+
+    .container-bt-navbar ul li:hover > a{
+        background-color: #276561;
+        transition: 300ms ease-in-out;
+    }
+
+    .container-bt-navbar ul li ul a:hover {
+        color: white;
     }
 
     .container-bt-navbar ul li:hover > ul {
