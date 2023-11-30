@@ -5,11 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Layout KSI</title>
-        <link rel="stylesheet" href="../basestyledesktop.css">
-        <link rel="stylesheet" href="styledesktop.css">
+        <link rel="stylesheet" href="../basestyle.css">
+        <link rel="stylesheet" href="stylehome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="script.js" defer></script>
+        <script src="../basescript.js" defer></script>
     </head>
     
     <body>
@@ -19,14 +20,14 @@
             <div class="container-bt-navbar">
                     <ul class="dropdown">
                         <li><a href="#">Beranda</a></li>
-                        <li><a href="#">Informasi</a>
+                        <li id="inner-dropdown"><a href="#"><div class="container-list-info" id="button-info">Informasi <i class="material-icons">arrow_drop_down</i></div></a>
                             <ul>
-                                <li><a href="../jenis sampah/jenissampah.html">Jenis Sampah</a></li>
-                                <li><a href="../pengelolaan sampah/pengelolaansampah.html">Pengelolaan Sampah</a></li>
-                                <li><a href="../dampak negatif sampah/dampaknegatif.html">Dampak Negatif Sampah</a></li>
+                                <li><a href="../infopage1/infopage1.html">Jenis Sampah</a></li>
+                                <li><a href="../infopage2/infopage2.html">Pengelolaan Sampah</a></li>
+                                <li><a href="../infopage3/infopage3.html">Dampak Negatif Sampah</a></li>
                             </ul>
                         </li>
-                        <li><a href="../tentangdesa/tentangdesa.html">Tentang Desa</a></li>
+                        <li><a href="../aboutpage/aboutpage.html">Tentang Desa</a></li>
                     </ul>
             </div>
             <label for="myCheckbox"><i class="material-icons">menu</i></label>
@@ -54,7 +55,7 @@
             </div>
             <h2>INFORMASI</h2>
             <div class="container-info">
-                <a href="" class="tag-a">
+                <a class="tag-a">
                     <div class="container-info-item">
                         <div class="imageborder">
                             <img src="src/info1.png">
@@ -65,7 +66,7 @@
                         </p>
                     </div>
                 </a>
-                <a href="">
+                <a>
                     <div class="container-info-item">
                         <div class="imageborder">
                             <img src="src/info2.png">
@@ -76,7 +77,7 @@
                         </p>
                     </div>
                 </a>
-                <a href="">
+                <a>
                     <div class="container-info-item">
                         <div class="imageborder">
                             <img src="src/info3.png">
