@@ -9,15 +9,12 @@
     color: #276561;
 }
 
-
 .container-carousel {
-    margin-top: 60px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 60px;
     width: 98vw;
-    height: 55.3vh;
+    height: 40vh;
     position: relative;
-
-
 }
 
 .container-carousel ul {
@@ -76,20 +73,29 @@
     right: 8%;
 }
 
+.container-content h2 {
+    font-size: 28pt;
+    margin-top: 50px;
+}
+
 .container-info {
     width: 100%;
     display: flex;
     flex-direction: row;
     margin: 0px;
+    margin-bottom: 10px;
     justify-content: space-evenly;
+}
 
+.container-info a:hover{
+    background-color: #276561;
+    color: white;
+    border-radius: 10px;
 }
 
 .container-info a {
-    text-decoration: none;
-}
-
-.tag-a {
+    padding: 0px 10px;
+    color: #276561;
     text-decoration: none;
 }
 
@@ -97,18 +103,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 400px;
 }
 
 .imageborder {
     display: flex;
     width: fit-content;
-    height: 192px;
+    height: 240px;
     align-items: end;
     justify-content: center;
 }
 
-.imageborder img {
-    width: 70%;
+.container-info h3{
+    color: inherit;
+}
+
+#img3 {
+    height: 95%;
+}
+
+#img2 {
+    height: 100%;
+}
+
+#img1{
+    height: 120%;
 }
 
 
@@ -134,14 +153,16 @@
     
     .container-info {
         flex-direction: column;
+        width: 70%;
         gap: 50px;
         align-items: center;
     }
 
     .container-content h2 {
-        width: 100%;
-        text-align: center;
-        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        width: 100vw;
     }
 
     .container-info-item {
