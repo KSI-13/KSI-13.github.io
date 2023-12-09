@@ -9,7 +9,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .container-info p {
